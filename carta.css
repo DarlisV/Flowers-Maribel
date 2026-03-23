@@ -13,10 +13,10 @@ body {
 }
 
 .flores {
-    position: left;
-    bottom: 130px; 
-    left: 380px;
-    width: 500px; 
+    position: absolute;
+    bottom: 130px;
+    left: 50px;
+    width: 500px;
     animation: aparecer 2s ease-in-out;
 }
 
