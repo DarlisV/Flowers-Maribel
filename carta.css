@@ -30,3 +30,23 @@ body {
         transform: scale(1);
     }
 }
+
+/* ── Tablets (≤768px) ── */
+@media (max-width: 768px) {
+    .flores {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80vw;
+        bottom: 100px;
+    }
+}
+
+/* ── Móviles pequeños (≤480px) ── */
+@media (max-width: 480px) {
+    .flores {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90vw;
+        bottom: 60px;
+    }
+}
