@@ -13,7 +13,7 @@ body {
 }
 
 .flores {
-    position: absolute;
+    position: left;
     bottom: 130px; 
     left: 380px;
     width: 500px; 
