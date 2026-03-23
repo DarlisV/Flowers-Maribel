@@ -5,19 +5,33 @@ body, html {
 }
 
 body {
-    background-image: url('Doc1_1.png');
+    background-image: url('renam.png');
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(180, 120, 30, 0.3);
+    z-index: 0;
+    pointer-events: none;
+}
+
 .flores {
     position: absolute;
-    bottom: 130px;
-    left: 50px;
-    width: 500px;
+    bottom: -20px;
+    left: -20px;
+    width: 320px;
     animation: aparecer 2s ease-in-out;
+    filter: drop-shadow(0px 6px 12px rgba(255, 200, 0, 0.5)) brightness(1.15);
+    z-index: 1;
 }
 
 @keyframes aparecer {
@@ -34,19 +48,17 @@ body {
 /* ── Tablets (≤768px) ── */
 @media (max-width: 768px) {
     .flores {
-        left: 50%;
-        transform: translateX(-50%);
-        width: 80vw;
-        bottom: 100px;
+        width: 250px;
+        bottom: -15px;
+        left: -15px;
     }
 }
 
-/* ── Móviles pequeños (≤480px) ── */
+/* ── Móviles (≤480px) ── */
 @media (max-width: 480px) {
     .flores {
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90vw;
-        bottom: 60px;
+        width: 200px;
+        bottom: -10px;
+        left: -10px;
     }
 }
